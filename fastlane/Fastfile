@@ -1,0 +1,12 @@
+lane :test do
+  client = playship(key: "~/Desktop/CLOUD_DRIVE_OLD/FXF/FXF-ANDROID/fastlane/google_play_key.json")
+
+  next_page = nil
+  loop
+  products = client.list_in_app_products("at.krone.epaper", token: next_page)
+  products.inappproduct.each do |p|
+    UI.important("IAP: #{p.sku}")
+  end
+  next_page = products.token_pagination.next_page_token
+  break until next_page
+end

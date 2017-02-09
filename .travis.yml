@@ -1,0 +1,11 @@
+language: ruby
+rvm:
+- 2.2.4
+deploy:
+  provider: rubygems
+  api_key:
+    secure: lHftMpCR2lB+dKvfAWz991FPAk7HbO3UfIFm9rvHEMHFtY/D6xy4RDXzmShJmBKpa+XqTsBqpY/KsH4mzVHICC1x54pOxGChWkKECzlfDKb1nvOzcRWrtsLThBTi2EOPbmbw4nz/F3mMSQs9AAcgg57hPeIFQfFSVD1HSHwPxQOYHtia51N4vzMfg1Vyugz2hVC9Nzz/bL7uE5qJWenq2sqxEoXmn6dwJuvz4eRNRVAbVeKI3KGqVVg8PE12xJxnepmWk2zN3gWQGGpUz65YVBYeSVUxxK1d7mfBMPwYzjrbyH5LqwZvic5kjhrgCD9x8Kd+q2e82I3Co/tobB0To9Mk5r4P6QQzQcQkmAG0kgvKhQ3pg4HIx+bxsNpeeRAVKdikJp12vGjz20HL6PrQdlz/NkDX6UqXnmGLh3V3VI58cxOvn4+NGOH/DfWmpmSUW4/Zv9Ih8ym2gF5qpXHkKDuu/HdsvhVh5fwaaOSh4Tw3Cbkr9YPcCszAjKAiG9xjyaZP/bT8AtYQie+7S2+1Ft7pxvX+8q3cMupLppLbxGMiMbMLaXbNxUJBwitB8t/5xm2Lz5OVhgUlHDAX1CNhRcoYWqHkH1dLyVd6D4FUJD6gkSMFup9rf+mHwoDGSi2CFN8Vsad/AF2vq00rjMiWA8oOFGjbTOAWZJ+2K8p3nuU=
+  gem: fastlane-plugin-playship
+  on:
+    branch: master
+    repo: hjanuschka/fastlane-plugin-playship
