@@ -1,6 +1,7 @@
 require 'fastlane/plugin/playship/version'
 require 'googleauth'
 require 'google/apis/androidpublisher_v2'
+require 'fastlane/plugin/playship/client'
 
 module Fastlane
   module Playship

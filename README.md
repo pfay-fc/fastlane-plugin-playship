@@ -17,14 +17,14 @@ Exposes a initialized AndroidpublisherV2 instance
 ## Example
 
 ```ruby
-  client = playship(key: "~/Desktop/CLOUD_DRIVE_OLD/FXF/FXF-ANDROID/fastlane/google_play_key.json")
+  client = playship(key: "~/Desktop/CLOUD_DRIVE_OLD/FXF/FXF-ANDROID/fastlane/google_play_key.json").client
 ```
 
 ### List in-app-purchases
 
 ```ruby
 lane :list_iaps do
-  client = playship(key: "~/Desktop/CLOUD_DRIVE_OLD/FXF/FXF-ANDROID/fastlane/google_play_key.json")
+  client = playship(key: "~/Desktop/CLOUD_DRIVE_OLD/FXF/FXF-ANDROID/fastlane/google_play_key.json").client
   iaps = client.list_in_app_products("at.krone.epaper", token: nil)
 
   next_page = nil
