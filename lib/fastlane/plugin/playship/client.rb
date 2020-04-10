@@ -14,8 +14,8 @@ module Fastlane
 
         Google::Apis::ClientOptions.default.application_name = "fastlane-playship"
         Google::Apis::ClientOptions.default.application_version = "1.0"
-        Google::Apis::RequestOptions.default.timeout_sec = 300
-        Google::Apis::RequestOptions.default.open_timeout_sec = 300
+        Google::Apis::ClientOptions.default.read_timeout_sec = 300
+        Google::Apis::ClientOptions.default.open_timeout_sec = 300
         Google::Apis::RequestOptions.default.retries = 5
 
         android_publisher = Androidpublisher::AndroidPublisherService.new
