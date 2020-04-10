@@ -1,7 +1,7 @@
 module Fastlane
   module Playship
     class Client
-      Androidpublisher = Google::Apis::AndroidpublisherV2
+      Androidpublisher = Google::Apis::AndroidpublisherV3
       CredentialsLoader = Google::Auth::CredentialsLoader
       # Raw Client access
       attr_accessor :client
