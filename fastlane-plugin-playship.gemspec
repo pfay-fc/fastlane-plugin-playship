@@ -22,7 +22,7 @@ Gem::Specification.new do |spec|
 
   # spec.add_dependency 'your-dependency', '~> 1.0.0'
   # spec.add_dependency 'google-api-client', '~> 0.9.2' # Google API Client to access Play Publishing API
-  spec.add_dependency 'google-api-client', '~> 0.36.4' # Google API Client to access Play Publishing API
+  spec.add_dependency 'google-api-client', '>= 0.36.4' # Google API Client to access Play Publishing API
   
   spec.add_development_dependency 'pry'
   spec.add_development_dependency 'bundler'
